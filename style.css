@@ -1,0 +1,60 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 250px;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    color: grey;
+}
+
+/* Layout */
+section {
+    margin-bottom: 20px;
+}
+
+.contact-info, .education, .skills, .experience, .social-links, .contact-form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 100px;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode section {
+    border-color: orange;
+}
